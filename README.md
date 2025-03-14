@@ -71,29 +71,36 @@ Overview: This program generates a random password of a specified length. The pa
 
 Code Explanation:
 
-Function Definition:
+-1Function Definition:
+
 --Purpose: To generate a random password. --Details: The function generate_password takes one argument, length, which specifies the desired password length.
 
-Length Check:
+-2Length Check:
+
 --Purpose: To ensure the password is long enough. --Details: The function raises an error if the password length is less than 4 to ensure it can include at least one of each character type: lowercase, uppercase, digit, and punctuation.
 
-Character Sets:
+-3Character Sets:
+
 --Purpose: To define possible characters for the password. --Details: The function combines all letters, digits, and punctuation characters into a single string for random selection.
 
-4.Ensuring Character Variety:
+-4.Ensuring Character Variety:
 
 --Purpose: To include at least one of each character type. --Details: The function ensures that the password includes one lowercase letter, one uppercase letter, one digit, and one punctuation mark.
 
-Filling the Password:
+-5Filling the Password:
+
 --Purpose: To complete the password to the desired length. --Details: The function randomly selects additional characters from the combined set until the desired length is reached.
 
-Randomizing Order:
+-6Randomizing Order:
+
 --Purpose: To ensure the password is randomized. --Details: The password list is shuffled to randomize the order of characters.
 
-Returning the Password:
+-7Returning the Password:
+
 --Purpose: To output the final password. --Details: The list of characters is joined into a string and returned as the final password.
 
-Example Usage:
+-Example Usage:
+
 
 Generates a password of desired length 0 to exit  and prints it
 
